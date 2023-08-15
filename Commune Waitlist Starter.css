@@ -1,0 +1,163 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    background-color: #F6F9FE;
+    padding-right: 5%;
+    padding-left: 10%;
+    margin: 0;
+    font-family: sans-serif, serif;
+}
+.header , .main{
+    margin-top: 5%;
+    width: 100%;
+}
+footer{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 100%;
+}
+.main::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+section, aside{
+    display: block;
+    float: left;
+    width: 50%;
+}
+.menu-icon{
+    display: none;
+}
+ul{
+    float: right;
+    padding-right: 10%;
+}
+nav ul {
+    list-style-type: none;
+    overflow: hidden;
+}
+nav ul li{
+    float: left;
+    text-align: center;
+    padding: 15px;
+    color: #878787;
+}
+nav ul li:hover {
+    background-color: #878787;
+    color: #372865;
+    border-radius: 5px;
+}
+.join-waitlist{
+    background-color: #372865;
+    color: white;
+    padding: 15px;
+    border: #372865;
+    border-radius: 5px;
+}
+#purple-p{
+    background-color: #372865;
+    color: #CCC1E6;
+    width: 70%;
+    border-radius: 20px;
+    text-align: center;
+    padding: 10px 20px;
+}
+h1{
+    font-size: 3.5em;
+    color: #353252;
+}
+article p {
+    color: #848484;
+}
+#email-input{
+    border: 1px solid #E3E3E3;
+    border-radius: 5px;
+    padding: 15px;
+    margin-right: 5px;
+}
+aside img{
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+}
+footer svg{
+    margin-right: 1%;
+}/*
+@media only screen and (max-width:768px) {
+    .navbar{
+        display: none;
+    }
+    .menu-icon{
+        display: block;
+        float: right;
+        padding-right: 20%;
+    } 
+}*/
+@media only screen and (min-width:768px)and (max-width:1200px) {
+    aside , .navbar{
+        display: none;
+    }
+    .menu-icon{
+        display: block;
+        float: right;
+        margin-right: 10%;
+    }
+    section{
+        width: 100%;
+        padding-left: 10%;
+        padding-right: 10%;
+        text-align: center;
+    }
+    #purple-p{
+        width: 100%;
+    }
+    .join-waitlist{
+        width: 25%;
+    }
+    #email-input{
+        width: 60%;
+    }
+    footer{
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+}
+@media only screen and (max-width:768px){
+    aside , .navbar{
+        display: none;
+    }
+    .menu-icon{
+        display: block;
+        float: right;
+        margin-right: 2%;
+    }
+    body{
+        margin:0;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    section{
+        width: 100%;
+        text-align: center;
+    }
+    #purple-p{
+        width: 100%;
+        border-radius: 40px;
+    }
+    .join-waitlist, #email-input, #purple-p {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    footer{
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+    footer svg{
+        margin-right: 7%;
+        margin-top: 2%;
+    }
+}
